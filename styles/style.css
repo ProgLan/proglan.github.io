@@ -1,0 +1,86 @@
+/*************
+  particleJS
+**************/
+
+
+/* ---- reset ---- */
+
+body {
+    background: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #232741;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
+}
+
+
+/*************
+  index.html
+**************/
+
+section {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+.footer {
+    /* font */
+    font-size: 1em;
+    /* size */
+    width: 100%;
+    height: 40px;
+    /* position */
+    position: relative;
+    bottom: 0px;
+    /* color */
+    border-top: solid 1px rgb(71, 188, 132);
+}
+
+#sec-1 {}
+
+#sec-2,
+#sec-3,
+#sec-4 {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    bottom: 7px;
+}
+
+#sec-3 {
+    /*background: rgba(9, 15, 14, 0.95);*/
+    background-image: -o-linear-gradient(180deg, rgba(9, 15, 14, 0) 0%, rgba(9, 15, 14, 0.95) 45%, rgba(9, 15, 14, 0) 90%);
+    background-image: -moz-linear-gradient(180deg, rgba(9, 15, 14, 0) 0%, rgba(9, 15, 14, 0.95) 45%, rgba(9, 15, 14, 0) 90%);
+    background-image: -webkit-linear-gradient(180deg, rgba(9, 15, 14, 0) 0%, rgba(9, 15, 14, 0.95) 45%, rgba(9, 15, 14, 0) 90%);
+    background-image: -ms-linear-gradient(180deg, rgba(9, 15, 14, 0) 0%, rgba(9, 15, 14, 0.95) 45%, rgba(9, 15, 14, 0) 90%);
+    background-image: linear-gradient(180deg, rgba(9, 15, 14, 0) 0%, rgba(9, 15, 14, 0.95) 45%, rgba(9, 15, 14, 0) 90%);
+}
+
+#sec-4 {
+    bottom: 0;
+}
+
+#container {
+    position: absolute;
+    z-index: 1;
+}
