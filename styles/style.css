@@ -29,6 +29,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 50% 50%;
+    z-index: -1;
 }
 
 
@@ -54,19 +55,13 @@ div {
     border-top: solid 1px rgb(71, 188, 132);
 }
 
-.wrapper {
-    text-align: center;
-}
-
 .intro .text {
-    display: inline-block;
-    margin: 25% 5% 5% 60%;
+    margin-top: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     position: absolute;
     color: #d7b94c;
     font: 400 2em consolas;
-    width: 50ch;
-    overflow: hidden;
-    white-space: normal;
     -webkit-animation: typing 3s steps(16) forwards, cursor 1s infinite;
     animation: typing 3s steps(16) forwards, cursor 1s infinite;
 }
