@@ -54,8 +54,17 @@ div {
     border-top: solid 1px rgb(71, 188, 132);
 }
 
-#div-1 {}
+#introText {
+    color: #d7b94c;
+    font: 400 2em consolas;
+    width: 50ch;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-animation: typing 3s steps(16) forwards, cursor 1s infinite;
+    animation: typing 3s steps(16) forwards, cursor 1s infinite;
+}
 
+#div-1,
 #div-2,
 #div-3,
 #div-4 {
@@ -66,8 +75,6 @@ div {
     z-index: 2;
     bottom: 7px;
 }
-
-#div-3 {}
 
 #div-4 {
     bottom: 0;
@@ -109,7 +116,7 @@ div {
     margin-left: -60px;
     margin-top: -60px;
     z-index: 2;
-    animation: planetRotate 12s infinite
+    animation: rotate 12s infinite
 }
 
 .space .mars .planet .surface {
@@ -131,7 +138,7 @@ div {
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.15);
     box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.2);
-    animation: planetRotate 5s infinite
+    animation: rotate 5s infinite
 }
 
 .space .mars .planet .crater1 {
@@ -157,11 +164,53 @@ div {
     box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-@keyframes planetRotate {
+
+/* ---- Animation ---- */
+
+@-webkit-keyframes rotate {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes cursor {
+    50% {
+        border-color: white;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: white;
     }
 }
