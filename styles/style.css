@@ -55,6 +55,7 @@ div {
 }
 
 #intro-text {
+    position: absolute;
     color: #d7b94c;
     font: 400 2em consolas;
     width: 50ch;
